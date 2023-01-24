@@ -74,6 +74,7 @@ jobs:
         run: |
           az account show
           az group list
+          az login
           pwd 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
